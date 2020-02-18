@@ -1,0 +1,135 @@
+---
+title: "Reproducibility in R Training Day"
+author: "Duncan Street"
+date: "18 February 2020"
+
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+
+---
+\
+
+# Introduction
+This is a introduction to reproducibility in R
+
+\
+
+## Starting with RStudio - Text formatting options {#start-header}
+Information about RStudio
+
+You can add **bold text** or __bold text with underscores__
+
+You can also use *italics text* with _single underscores_
+
+Adding superscript ^is_also_easy^
+
+Adding subscript using ~tilde_sign~
+
+If you add inline code use the backtick `to write code`
+
+USe strikethrough text ~~double~~ tilde
+
+If you're writing a lot of text
+then you might want to break it up.
+
+Another way is to use the \
+backslash
+
+You can also create a link like this: [Link to bioinformatics website](https://training.cam.ac.uk/bioinformatics/event-timetable)
+
+
+But you might have some link to the footnote [^1].
+
+[^1]: This is my first footnote
+
+## Lists
+
+1. Item 1
+2. Item 2
+3. Item 3
+    a. Item 3a
+        i. Item 3ai
+        ii. Item 3aii
+    b. Item 3b
+    c. Item 3c
+4. Item 4
+
+
+* Item a
+* Item b
+* Item c
+    * Item c1
+    * Item c2
+    * Item c3
+        * Item c3i
+        * Item c3ii
+
+
+- Item 1
+- Item 2
+- Item 3
+
+
+### Tasks
+
+- [ ] an unchecked task list item
+- [x] checked item
+
+
+### Link images
+
+![Remote University of Cambridge logo](https://cdn.worldvectorlogo.com/logos/university-of-cambridge.svg)
+
+
+![Local University of Cambridge logo](images/university-of-cambridge.svg)
+
+
+
+#### Tables
+
+You can create tables using | -
+
+| Column header | Another Column |
+| ------------- | -------------- |
+| First row     | With info      |
+| More rows     | More info      |
+
+
+> A greater than sign creates blocks
+
+
+Single `backticks` are used inline.
+
+```
+print("hello world")
+read.csv("data.csv")
+```
+
+
+```{r}
+75*8
+```
+
+
+```{r}
+calculation_output <- 100*2
+
+calculation_output
+```
+
+```{r}
+calculation_output*5
+```
+
+
+```{r}
+download.file(url="https://raw.githubusercontent.com/cambiotraining/reproducibility-training/master/data/gapminder_data.csv", destfile="data/gapminder_data.csv")
+```
+
+
+
+Link back to header [link to header](#start-header)
+
